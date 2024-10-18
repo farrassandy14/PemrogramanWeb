@@ -1,0 +1,75 @@
+/* Styling lebih menarik untuk kalkulator */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  .calculator {
+    background-color: #2e2e3a;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 360px;
+  }
+  
+  #display {
+    width: 92%;
+    padding: 15px;
+    font-size: 2rem;
+    background-color: #1d1d29;
+    border: none;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #4e4e61;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  button.operator {
+    background-color: #ff8c42;
+  }
+  
+  button.equal {
+    background-color: #42c6ff;
+    grid-column: span 2;
+  }
+  
+  button.zero {
+    grid-column: span 2;
+  }
+  
+  button.clear, button.clear-entry, button.all-clear {
+    background-color: #ff6150;
+  }
+  
+  button:hover {
+    background-color: #616179;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+    background-color: #3e3e5c;
+  }
+  
